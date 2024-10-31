@@ -183,7 +183,29 @@ public class Main {
             System.out.println("k " + playerAsMap.get(k));
         }
 
+        int x = 10;
+        int y = 20;
+        int sum =addNumber(x,y);
+        int[] intArray = {1,2,3,4,5};
+
+        setNumber(intArray, 5);
+
     }
+    //AccessModifier [static] returTyp namePåFunctionen(dataTypePåParameter namnpÅParameter,.....){
+    ////kod här
+
+    public static int addNumber(int x, int y){
+
+
+        x= x+10;
+        return x+y;
+    }
+
+    public static void setNumber(int[] array, int x){
+        int[] array2 = array.clone();
+        array[1] = x;
+    }
+
 
 
 
